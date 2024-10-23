@@ -319,7 +319,7 @@ margin-top: 100px;
   }
 
 .category_selection_box_food {
-  padding: 0 20px 0 20px;
+  padding: 0 50px 0 50px;
   display: flex;
   flex-direction: column;
 
@@ -336,4 +336,94 @@ margin-top: 100px;
   font-weight: bold;
   font-size: 16px;
   text-align: center;
+}
+
+.content_image {
+  background-image: url('https://picsum.photos/1200/600');
+  margin: 168px 0 0 0;
+  height: 600px;
+  width: var(--width-full);
+  background-size: cover;
+  background-position: center center;
+  clip-path: polygon(0 0, 100% 16%, 100% 100%, 0 100%);
+}
+
+.content_image_container {
+  display:grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto auto auto;
+  gap: var(--grid-gap);
+  height: 100%;
+  width: var(--width-12col);
+  margin: 0 auto 0 auto;
+}
+
+.content_image_container_textbox {
+  grid-column: 9 / span 4;
+  grid-row: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--background-color-light);
+  border-radius: 5px;
+  padding: 30px 30px;
+  margin-top: 196px;
+}
+
+.content_image_container_textbox_top_text {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.content_image h5 {
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 0 10px 0;
+  color: var(--primary-color );
+}
+
+.content_area {
+  margin-top: 196px;
+}
+
+.content_area_headline {
+  height: 60px;
+  color: var(--color-white);
+  border-bottom: 1px solid var(--color-white);
+  font-size: 37px;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 0 20px 0;
+  width: var(--width-12col);
+  margin: 70px auto 0 auto;
+}
+
+.content_area_container {
+  margin: 28px auto 0 auto;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto auto auto;
+  height: 100%;
+  width: var(--width-12col);
+}
+
+.box_top_left {
+  grid-column: 1 / span 6;
+  grid-row: 1;
+  background-color: #9374EB;
+  height: fit-content;
+}
+
+.box_top_right {
+  grid-column: 7 / span 6;
+  grid-row: 1;
+  background-color: #249C8E;
+}
+
+.content_area_box_text {
+  margin: 20px;
 }
