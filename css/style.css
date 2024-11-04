@@ -71,6 +71,38 @@
   color: var(--category-pasta)
 }
 
+
+
+.line-seafood {
+  border-left: 1px solid var(--category-seafood);
+}
+
+.line-chicken {
+  border-left: 1px solid var(--category-chicken);
+}
+
+.line-meats {
+  border-left: 1px solid var(--category-meats);
+}
+
+.line-veg {
+  border-left: 1px solid var(--category-veg);
+}
+
+.line-dessert {
+  border-left: 1px solid var(--category-dessert);
+}
+
+.line-misc {
+  border-left: 1px solid var(--category-misc);
+}
+
+.line-pasta {
+  border-left: 1px solid var(--category-pasta);
+}
+
+
+
 body {
   background-color: #dddddd;
   font-family: "Roboto", sans-serif;
@@ -87,22 +119,25 @@ body {
   background-color: #00000088;
   position: relative;
   z-index: 1;
+  height: 80px
 }
 
 .menu-container {
   width: var(--width-12col);
   margin: 0 auto 0 auto;
+  height: 80px;
+  display: flex;
+  align-items: center;
 }
 
 .menu-container ul {
   display: flex;
   font-size: 12px;
-
 }
 
 .menu-container ul li {
   list-style-type: none;
- margin:10px 0;
+  margin:10px 0;
 }
 
 .menu-container ul li a {
@@ -122,9 +157,9 @@ body {
 }
 
 .hero {
-  margin-top: -35px;
+  margin-top: -80px;
   width: var(--width-full);
-  height: 600px;
+  height: 680px;
   background-image: url('https://picsum.photos/1200/600');
   background-position: center center;
   background-repeat: no-repeat;
@@ -145,7 +180,7 @@ body {
 .hero-text {
 grid-column: 1 / span 4;
 grid-row: 1;
-margin-top: 100px;
+margin-top: 192px;
 }
 
 .hero-text-small-header {
@@ -165,6 +200,11 @@ margin-top: 100px;
   grid-column: 2 / span 3;
   grid-row: 2;
   margin-top: 60px;
+}
+
+.hero-search p {
+  font-size: 12px;
+  padding-top: 10px;
 }
 
 .search-box {
@@ -257,7 +297,7 @@ margin-top: 100px;
   display: flex;
   justify-content: space-between;
   margin: 20px 0 0 0;
-  border-left: 1px solid var(--category-seafood)
+/*   border-left: 1px solid var(--category-seafood) */
 }
 
 .todays_recipes_content_block_bottom_area_left {
@@ -319,7 +359,7 @@ margin-top: 100px;
   }
 
 .category_selection_box_food {
-  padding: 0 50px 0 50px;
+  padding: 0 40px;
   display: flex;
   flex-direction: column;
 }
@@ -504,6 +544,110 @@ margin-top: 100px;
   margin-bottom: 10px;
   padding-left: 10px;
   border-left: 2px solid var(--primary-color);
+}
+
+.footerContainer {
+  padding: 32px 0;
+  background-color: var(--primary-color);
+  width: var(--width-full);
+}
+
+.footerBox {
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto auto auto;
+  width: var(--width-12col);
+}
+
+.footerBoxLeft {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-right: 1px solid var(--color-light);
+}
+
+.footerSocials {
+  display: flex;
+}
+
+.footerSocialsText {
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.footerSocialsText ul {
+  list-style-type: none;
+}
+
+.footerSocialsText ul li {
+  padding: 3px 0 2px 5px;
+}
+
+.footerSocialsText ul li a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 13px;
+}
+
+.footerSocialsLogos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footerMenus{
+  display: flex;
+}
+
+.footerMenus ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footerMenus ul li {
+  padding: 3px 0 2px 0;
+}
+
+.footerMenus ul li a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 13px;
+}
+
+.footerBoxRight {
+  direction: rtl;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footerCopyright {
+  display: flex;
+  align-items: center;
+}
+
+.footerLinks {
+  padding-bottom: 10px;
+}
+
+.footerLinks a {
+  color: var(--color-light);
+  font-size: 10px;
+}
+
+.footerLinks a li {
+  text-decoration: none;
+}
+
+.footerCopyrightText p {
+  font-size: 10px;
+}
+
+.footerCopyrightLogo {
+  padding-right: 10px;
 }
 
 /* MEDIA STUFF */
