@@ -1124,8 +1124,22 @@ margin-top: 192px;
 
     /* SOUP PAGE */
 
+    .recipe-hero-text {
+      padding-left: 10px;
+    }
+
+    .recipe_details {
+      padding-top: 30px;
+    }
+
     .recipe_details_left {
       grid-column: 1 / span 12;
+      grid-row: 2;
+    }
+
+    .recipe_details_right {
+      grid-column: 1 / span 12;
+      grid-row: 1;
     }
   
     .recipe_details_ingredient_block_info_three {
@@ -1134,6 +1148,26 @@ margin-top: 192px;
   
     .recipe_details_ingredient_block_buttons {
       margin-left: 10px;
+    }
+
+    .recipeInstructionOneLeftHeadline {
+      font-size: 25px;
+      padding: 10px;
+    }
+
+    .recipeInstructionOneRightHeadline {
+      font-size: 25px;
+      padding: 10px;
+    }
+
+    .recipeInstructionTwoLeftHeadline {
+      font-size: 25px;
+      padding: 10px;
+    }
+
+    .recipeInstructionTwoRightHeadline {
+      font-size: 25px;
+      padding: 10px;
     }
   
     .recipeInstructionOneLeft {
