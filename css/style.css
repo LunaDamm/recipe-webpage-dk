@@ -365,6 +365,7 @@ margin-top: 192px;
   display: flex;
   justify-content: center;
   padding: 0 50px;
+  font-size: 37px;
 }
 
 .category_selection_box_food_text {
@@ -372,6 +373,7 @@ margin-top: 192px;
   font-weight: bold;
   font-size: 16px;
   text-align: center;
+  padding-top: 5px;
 }
 
 .content_image {
@@ -589,12 +591,6 @@ margin-top: 192px;
   font-size: 13px;
 }
 
-.footerSocialsLogos {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
 .footerMenus{
   display: flex;
 }
@@ -648,6 +644,7 @@ margin-top: 192px;
 
 .footerCopyrightLogo {
   padding-right: 10px;
+  font-size: 16px;
 }
 
 
@@ -921,7 +918,7 @@ margin-top: 192px;
   padding: 2px;
 }
 
-/* lmao */
+/* Next Instructions */
 
 .recipeInstructionTwoBox {
   display: grid;
@@ -956,8 +953,8 @@ margin-top: 192px;
   padding: 0 200px 0 20px;
 }
 
-.recipeInstructionTwoLeftText ol li:: {
-  content: "step "
+.recipeInstructionTwoLeftText ol li::before {
+  content: "step ";
 }
 
 .recipeInstructionTwoLeftText ol li {
