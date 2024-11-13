@@ -649,10 +649,7 @@ margin-top: 192px;
 
 
 
-/* subpage.html */
-/* subpage.html */
-/* subpage.html */
-/* subpage.html */
+/* soup.html */
 
 
 .color-primary {
@@ -954,13 +951,30 @@ margin-top: 192px;
 }
 
 .recipeInstructionTwoLeftText ol li::before {
-  content: "step ";
+  content: "STEP ";
 }
 
 .recipeInstructionTwoLeftText ol li {
   padding: 10px;
 }
 
+ol.step-orange {
+  counter-reset: step-counter; /* Resets the counter when the list starts */
+}
+
+ol.step-orange li {
+  list-style-type: none; /* Removes default bullets */
+  counter-increment: step-counter; /* Increments the counter for each li */
+}
+
+ol.step-orange li::before {
+  content: "Step " counter(step-counter) ; /* Adds the text "Step X" before each item */
+  text-transform: uppercase;
+  color: var(--primary-color);
+  display: inline-block; /* Den her hjalp GPT mig også med, very good */
+  transform: translate(-100%, 100%) rotate(-90deg);
+  position: absolute;
+}
 
 .recipeInstructionTwoRight {
   grid-column: 8 / span 4;
@@ -990,6 +1004,37 @@ margin-top: 192px;
   padding: 2px;
   list-style-type: none;
 }
+
+
+
+
+/* about.html */
+
+.about_area_container {
+  margin: 28px auto 220px auto;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto auto auto;
+  height: 100%;
+  width: var(--width-12col);
+}
+
+.about_box_top_left {
+  grid-column: 1 / span 6;
+  grid-row: 1;
+  background-color: var(--background-color-light);
+}
+
+.about_box_top_right {
+  grid-column: 7 / span 6;
+  grid-row: 1;
+  background-image: url('https://picsum.photos/560/380');
+  background-size: cover;
+  background-position: center center;
+  height: 380px;
+}
+
+
 
 /* MEDIA STUFF */
 
@@ -1170,11 +1215,13 @@ margin-top: 192px;
     .recipeInstructionOneLeft {
       grid-column: 1 / span 12;
       grid-row: 2;
+      padding: 10px;
     }
   
     .recipeInstructionOneRight {
       grid-column: 1 / span 12;
       grid-row: 1;
+      padding: 10px;
     }
 
     .recipeInstructionOneLeftText {
@@ -1184,11 +1231,13 @@ margin-top: 192px;
     .recipeInstructionTwoLeft {
       grid-column: 1 / span 12;
       grid-row: 2;
+      padding: 10px;
     }
   
     .recipeInstructionTwoRight {
       grid-column: 1 / span 12;
       grid-row: 1;
+      padding: 10px;
     }
 
     .recipeInstructionTwoLeftText {
