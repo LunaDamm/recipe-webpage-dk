@@ -1073,7 +1073,7 @@ ol.step-orange li::before {
   align-items: center;
   padding: 0 0 20px 0;
   width: var(--width-12col);
-  margin: 0 auto 0 auto; 
+  margin: 0 auto 75px auto; 
 }
 
 .meet_team_content {
@@ -1084,6 +1084,61 @@ ol.step-orange li::before {
   height: 100%;
   width: var(--width-12col);
   gap: var(--grid-gap);
+}
+
+.meet_team_content_box {
+  margin-top: 0;
+  height: 170px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  align-items: center;
+  border-radius: 10px;
+}
+
+.meet_team_content_box_text {
+  grid-column: 2 / span 4 ;
+}
+
+.meet_team_content_box_text h5 {
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 0 10px 0;
+}
+
+.top_left {
+  grid-column: 2 / span 5;
+  grid-row: 1;
+  background-color: var(--background-color-light);
+}
+
+.top_right {
+  grid-column: 7   / span 5;
+  grid-row: 1;
+  background-color: var(--background-color-light);
+}
+
+.bottom_left {
+  grid-column: 2   / span 5;
+  grid-row: 2;
+  background-color: var(--background-color-light);
+}
+
+.bottom_right {
+  grid-column: 7   / span 5;
+  grid-row: 2;
+  background-color: var(--background-color-light);
+}
+
+.meet_team_content_box_img{
+  width: 135px;
+  height: 135px;
+  border: 2px solid var(--primary-color);
+  border-radius: 50%;
+  margin: 20px;
+  background-image: url('https://picsum.photos/560/380');
+  background-size: cover;
+  background-position: center center;
 }
 
 /* MEDIA STUFF */
