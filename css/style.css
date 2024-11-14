@@ -1010,7 +1010,7 @@ ol.step-orange li::before {
 /* about.html */
 
 .about_area_container {
-  margin: 0 auto 220px auto;
+  margin: 0 auto 150px auto;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: auto auto auto;
@@ -1077,7 +1077,7 @@ ol.step-orange li::before {
 }
 
 .meet_team_content {
-  margin: 0 auto 220px auto;
+  margin: 0 auto 150px auto;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: auto auto auto;
@@ -1141,6 +1141,62 @@ ol.step-orange li::before {
   background-position: center center;
 }
 
+.contactContainerLeft {
+  grid-column: 1 / span 6;
+}
+
+.contactForm {
+
+}
+
+.contactContainerLeft form {
+  display: flex;
+  flex-direction: column;
+  height: 390px;
+}
+
+.contactName {
+  padding: 15px;
+  margin-bottom: 10px;
+  border: var(--color-light) 1px solid;
+  border-radius: 5px;
+  outline: none;
+  color: var(--color-light);
+  background-color: transparent;
+}
+
+.contactEmail {
+  padding: 15px;
+  margin-bottom: 10px;
+  border: var(--color-light) 1px solid;
+  border-radius: 5px;
+  outline: none;
+  color: var(--color-light);
+  background-color: transparent;
+}
+
+.contactMessage {
+  height: 100%;
+  padding: 15px;
+  border: var(--color-light) 1px solid;
+  border-radius: 5px;
+  outline: none;
+  color: var(--color-light);
+  background-color: transparent;
+}
+
+.contactContainerRight {
+  grid-column: 7 / span 6;
+}
+
+.contactPicture {
+  grid-row: 1;
+  background-image: url('https://picsum.photos/560/390');
+  background-size: cover;
+  background-position: center center;
+  height: 390px;
+}
+
 /* MEDIA STUFF */
 
 @media (width < 650px) {
@@ -1192,6 +1248,11 @@ ol.step-orange li::before {
   }
 
   .content_area_headline {
+    font-size: 25px;
+    padding: 10px;
+  }
+
+  .meet_team_headline {
     font-size: 25px;
     padding: 10px;
   }
@@ -1348,6 +1409,70 @@ ol.step-orange li::before {
     .recipeInstructionTwoLeftText {
       padding: 0 20px 0 20px
     }
+
+    /* about.html */
+
+    .about_area_container {
+      padding: 0 10px;
+    }
+
+    .about_box_top_left {
+      grid-column: 1 / span 12;
+      grid-row: 1;
+      margin-top: 10px;
+    }
+
+    .about_box_top_right {
+      grid-column: 1 / span 12;
+      grid-row: 2;
+    }
+
+    .about_box_middle_left {
+      grid-column: 1 / span 12;
+      grid-row: 3;
+    }
+
+    .about_box_middle_right {
+      grid-column: 1 / span 12;
+      grid-row: 4;
+    }
+
+    .meet_team_content {
+      padding: 0 10px;
+    }
+
+    .top_left {
+      grid-column: 1 / span 12;
+      grid-row: 1;
+
+    }
+
+    .top_right {
+      grid-column: 1 / span 12;
+      grid-row: 2;
+
+    }
+
+    .bottom_left {
+      grid-column: 1 / span 12;
+      grid-row: 3;
+
+    }
+
+    .bottom_right {
+      grid-column: 1 / span 12;
+      grid-row: 4;
+
+    }
+
+    .contactContainerLeft {
+      grid-column: 1 / span 12;
+    }
+
+    .contactContainerRight {
+      grid-column: 1 / span 12;
+    }
+
 }
 
 @media (width < 500px) {
@@ -1377,4 +1502,8 @@ ol.step-orange li::before {
     display: none;
   }
 
+  .meet_team_headline {
+    font-size: 20px;
+    padding: 10px;
+  }
 }
