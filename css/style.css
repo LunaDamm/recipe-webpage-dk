@@ -588,6 +588,11 @@ margin-top: 192px;
   text-decoration: none;
   color: #000000;
   font-size: 13px;
+  display: flex;
+}
+
+.footerSocialsText ul li a i {
+  padding-right: 5px;
 }
 
 .footerMenus{
@@ -1498,8 +1503,13 @@ ol.step-orange li::before {
     padding: 10px;
   }
 
-  .footerSocialsText ul li a i{
+  .footerSocialsText ul li a p{
     display: none;
+  }
+
+  .footerSocialsText ul li a i{
+    font-size: 20px;
+    padding: 5px;
   }
 
   .meet_team_headline {
