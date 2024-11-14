@@ -1183,6 +1183,20 @@ ol.step-orange li::before {
   outline: none;
   color: var(--color-light);
   background-color: transparent;
+  font-family: "Roboto", sans-serif;;
+  font-size: 13.5px;
+}
+
+.contactButton {
+  margin: 10px 0 0 0;
+  height: 48px;
+  width: 150px;
+  padding: 15px;
+  border: var(--color-light) 1px solid;
+  border-radius: 5px;
+  outline: none;
+  color: var(--color-light);
+  background-color: transparent;
 }
 
 .contactContainerRight {
@@ -1467,6 +1481,10 @@ ol.step-orange li::before {
 
     .contactContainerLeft {
       grid-column: 1 / span 12;
+    }
+
+    .contactButton {
+      width: 100%;
     }
 
     .contactContainerRight {
