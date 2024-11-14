@@ -297,7 +297,6 @@ margin-top: 192px;
   display: flex;
   justify-content: space-between;
   margin: 20px 0 0 0;
-/*   border-left: 1px solid var(--category-seafood) */
 }
 
 .todays_recipes_content_block_bottom_area_left {
@@ -1150,10 +1149,6 @@ ol.step-orange li::before {
   grid-column: 1 / span 6;
 }
 
-.contactForm {
-
-}
-
 .contactContainerLeft form {
   display: flex;
   flex-direction: column;
@@ -1480,12 +1475,16 @@ ol.step-orange li::before {
 
 }
 
+/* Bare en lille detail for at declutter footeren */
+
 @media (width < 500px) {
   .footerMenus {
     direction: rtl;
     padding-right: 10px;
   }
 }
+
+/* TIL MINDERE SMARTPHONES */
 
 @media (width < 415px) {
   .todays_recipes_headline {
